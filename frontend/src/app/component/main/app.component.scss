@@ -1,0 +1,39 @@
+@import 'variable.scss';
+
+#quotation-container {
+    margin: 8px;
+    padding: 20px;
+    .current-price {
+        color: $col-black4 !important;
+    }
+    table {
+        width: 300px;
+        tbody {
+            display: block;
+            height: 200px;
+            overflow-y: scroll;
+        }
+        thead, tbody tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+        .column-title {
+            border-bottom: solid 2px $col-black4;
+        }
+        .divider-right {
+            border-right: solid 2px $col-black4;
+        }
+        .sell,
+        .buy {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .sell {
+            color: $col-blue1;
+        }
+        .buy {
+            color: $col-red1
+        }
+    }
+}

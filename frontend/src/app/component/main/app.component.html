@@ -1,0 +1,24 @@
+<div id="quotation-container" class="bg-background" fxLayout="column">
+    <section>
+        <h1>호가창</h1>
+    </section>
+    <section fxLayout="column" fxLayoutAlign="center start">
+        <h3 class="current-price">현재가: {{currentPrice}}</h3>
+        <table>
+            <thead>
+            <th class="column-title">매도수량</th>
+            <th class="column-title">매도가격</th>
+            <th class="column-title">매수수량</th>
+            <th class="column-title">매수가격</th>
+            </thead>
+            <tbody>
+            <tr *ngFor="let quotation of quotations">
+                <td class="sell">{{quotation.sellAmount}}</td>
+                <td class="sell divider-right">{{quotation.sellPrice}}</td>
+                <td class="buy">{{quotation.buyAmount}}</td>
+                <td class="buy">{{quotation.buyPrice}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>

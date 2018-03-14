@@ -1,0 +1,21 @@
+$col-white1: #ffffff;
+$col-white2: #f5f5f5;
+$col-white3: #f8f8f8;
+
+$col-black1: #000000;
+$col-black2: #222222;
+$col-black3: #444444;
+$col-black4: #666666;
+$col-black5: #888888;
+
+$col-blue1: #0051c7;
+
+$col-red1: #d60000;
+
+$col-background: $col-white2;
+
+%ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

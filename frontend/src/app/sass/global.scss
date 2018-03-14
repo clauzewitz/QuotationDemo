@@ -1,0 +1,27 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: $col-black2;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: $col-black4;
+}
+
+body {
+    margin: 0;
+    background-color: $col-black5;
+    .bg-background {
+        background-color: $col-white1;
+    }
+    table {
+        padding: 0;
+        border-spacing: 0px;
+        border: 0;
+        border-collapse: collapse;
+        th, td {
+            text-align: center;
+        }
+    }
+}
