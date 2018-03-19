@@ -1,12 +1,13 @@
 import {Component} from '@angular/core';
 import {QuotationResource} from '../../resources/quotation.resource';
 import {Quotation} from '../../model/quotation';
+import {WebsocketService} from '../../common/websocket.service';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    providers: [QuotationResource]
+    providers: [WebsocketService, QuotationResource]
 })
 export class AppComponent {
     quotations: Array<Quotation> = [];
